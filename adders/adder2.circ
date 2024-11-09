@@ -57,28 +57,48 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(150,110)" to="(230,110)"/>
-    <wire from="(150,150)" to="(230,150)"/>
-    <wire from="(290,130)" to="(330,130)"/>
-    <comp lib="0" loc="(150,110)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B1"/>
+    <wire from="(110,150)" to="(190,150)"/>
+    <wire from="(210,220)" to="(240,220)"/>
+    <wire from="(210,110)" to="(240,110)"/>
+    <wire from="(190,150)" to="(190,260)"/>
+    <wire from="(190,150)" to="(240,150)"/>
+    <wire from="(190,260)" to="(240,260)"/>
+    <wire from="(210,110)" to="(210,220)"/>
+    <wire from="(110,110)" to="(210,110)"/>
+    <wire from="(300,130)" to="(370,130)"/>
+    <wire from="(290,240)" to="(360,240)"/>
+    <comp lib="0" loc="(360,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="CARRY"/>
+      <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(290,130)" name="XOR Gate">
-      <a name="inputs" val="2"/>
+    <comp lib="0" loc="(370,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="SUM"/>
+      <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="6" loc="(275,68)" name="Text">
-      <a name="text" val="a forma mais simples de adição (sem carry) é essa"/>
+    <comp lib="6" loc="(102,45)" name="Text">
+      <a name="text" val="agora iremos adicionar o carry"/>
     </comp>
-    <comp lib="0" loc="(150,150)" name="Pin">
+    <comp lib="0" loc="(110,150)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B2"/>
     </comp>
-    <comp lib="0" loc="(330,130)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Q_SUCCESS"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="1" loc="(290,240)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(145,25)" name="Text">
+      <a name="text" val="o programa &quot;adder&quot; era só um adder sem carry"/>
+    </comp>
+    <comp lib="1" loc="(300,130)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(110,110)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="up"/>
+      <a name="label" val="B1"/>
     </comp>
   </circuit>
 </project>

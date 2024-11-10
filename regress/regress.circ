@@ -7,6 +7,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
+    <tool name="NOT Gate">
+      <a name="facing" val="south"/>
+    </tool>
     <tool name="AND Gate">
       <a name="facing" val="north"/>
       <a name="inputs" val="2"/>
@@ -15,15 +18,22 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="inputs" val="2"/>
     </tool>
+    <tool name="NOR Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="3"/>
+    </tool>
+    <tool name="XOR Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="3"/>
+    </tool>
+    <tool name="XNOR Gate">
+      <a name="facing" val="south"/>
+    </tool>
   </lib>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
   <lib desc="#Memory" name="4"/>
-  <lib desc="#I/O" name="5">
-    <tool name="LED">
-      <a name="facing" val="north"/>
-    </tool>
-  </lib>
+  <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
       <a name="text" val=""/>
@@ -32,8 +42,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#C:\Users\jp-gt\Documents\digital-circuitry-main\ra-logisim\decoder.circ" name="7"/>
-  <lib desc="file#contadordesc.circ" name="8"/>
+  <lib desc="file#decoder.circ" name="7"/>
+  <lib desc="file#contagemregress.circ" name="8"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -73,15 +83,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(710,140)" to="(710,340)"/>
+    <wire from="(410,480)" to="(470,480)"/>
     <wire from="(240,250)" to="(300,250)"/>
     <wire from="(630,310)" to="(680,310)"/>
-    <wire from="(340,260)" to="(340,270)"/>
+    <wire from="(410,450)" to="(410,480)"/>
     <wire from="(320,260)" to="(320,290)"/>
+    <wire from="(390,290)" to="(490,290)"/>
+    <wire from="(410,300)" to="(410,390)"/>
     <wire from="(630,290)" to="(630,310)"/>
     <wire from="(480,250)" to="(520,250)"/>
+    <wire from="(410,300)" to="(500,300)"/>
     <wire from="(650,190)" to="(650,230)"/>
     <wire from="(560,340)" to="(710,340)"/>
     <wire from="(560,170)" to="(560,280)"/>
+    <wire from="(430,280)" to="(430,390)"/>
     <wire from="(500,270)" to="(520,270)"/>
     <wire from="(640,300)" to="(670,300)"/>
     <wire from="(670,200)" to="(670,300)"/>
@@ -95,58 +110,70 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(630,170)" to="(630,230)"/>
     <wire from="(230,240)" to="(300,240)"/>
     <wire from="(640,180)" to="(640,230)"/>
+    <wire from="(170,230)" to="(300,230)"/>
     <wire from="(550,290)" to="(560,290)"/>
+    <wire from="(320,290)" to="(390,290)"/>
     <wire from="(640,290)" to="(640,300)"/>
-    <wire from="(310,300)" to="(500,300)"/>
     <wire from="(550,260)" to="(600,260)"/>
-    <wire from="(470,240)" to="(520,240)"/>
+    <wire from="(430,280)" to="(480,280)"/>
     <wire from="(550,270)" to="(610,270)"/>
+    <wire from="(500,230)" to="(500,240)"/>
     <wire from="(550,250)" to="(590,250)"/>
     <wire from="(330,260)" to="(330,280)"/>
-    <wire from="(320,290)" to="(490,290)"/>
     <wire from="(620,140)" to="(620,230)"/>
     <wire from="(230,240)" to="(230,260)"/>
     <wire from="(620,290)" to="(620,320)"/>
-    <wire from="(470,240)" to="(470,270)"/>
+    <wire from="(310,300)" to="(410,300)"/>
     <wire from="(480,250)" to="(480,280)"/>
     <wire from="(490,260)" to="(490,290)"/>
     <wire from="(500,270)" to="(500,300)"/>
+    <wire from="(330,280)" to="(430,280)"/>
+    <wire from="(390,290)" to="(390,390)"/>
     <wire from="(550,230)" to="(570,230)"/>
     <wire from="(490,260)" to="(520,260)"/>
     <wire from="(550,240)" to="(580,240)"/>
     <wire from="(240,250)" to="(240,290)"/>
+    <wire from="(500,240)" to="(520,240)"/>
     <wire from="(310,260)" to="(310,300)"/>
-    <wire from="(330,280)" to="(480,280)"/>
     <wire from="(620,140)" to="(710,140)"/>
-    <wire from="(220,230)" to="(300,230)"/>
     <wire from="(620,320)" to="(690,320)"/>
+    <wire from="(420,230)" to="(500,230)"/>
     <wire from="(590,200)" to="(670,200)"/>
     <wire from="(600,210)" to="(680,210)"/>
     <wire from="(610,220)" to="(690,220)"/>
     <wire from="(580,190)" to="(580,240)"/>
     <wire from="(570,180)" to="(570,230)"/>
     <wire from="(560,290)" to="(560,340)"/>
-    <wire from="(340,270)" to="(470,270)"/>
     <wire from="(590,200)" to="(590,250)"/>
     <wire from="(600,210)" to="(600,260)"/>
     <wire from="(610,220)" to="(610,270)"/>
     <wire from="(550,280)" to="(560,280)"/>
-    <comp lib="5" loc="(620,230)" name="7-Segment Display"/>
+    <comp lib="5" loc="(470,480)" name="LED"/>
+    <comp lib="6" loc="(329,67)" name="Text">
+      <a name="text" val="tá dando problema porque eu fiz 4 bit, ou seja, temos 15 números, sendo que esse relogio suporta só 9"/>
+    </comp>
+    <comp lib="8" loc="(300,230)" name="main"/>
+    <comp lib="0" loc="(420,230)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="gambiarra"/>
+    </comp>
     <comp lib="0" loc="(220,260)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="RST"/>
     </comp>
-    <comp lib="8" loc="(300,230)" name="main"/>
-    <comp lib="7" loc="(550,230)" name="DECODIICADOR7SEG"/>
-    <comp lib="0" loc="(220,230)" name="Clock">
+    <comp lib="0" loc="(170,230)" name="Clock">
       <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="5" loc="(620,230)" name="7-Segment Display"/>
+    <comp lib="1" loc="(410,450)" name="NOR Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="3"/>
+      <a name="label" val="se não houver mais energia acenda a lampâda"/>
     </comp>
     <comp lib="0" loc="(220,290)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="PST"/>
     </comp>
-    <comp lib="6" loc="(329,67)" name="Text">
-      <a name="text" val="tá dando problema porque eu fiz 4 bit, ou seja, temos 15 números, sendo que esse relogio suporta só 9"/>
-    </comp>
+    <comp lib="7" loc="(550,230)" name="DECODIICADOR7SEG"/>
   </circuit>
 </project>

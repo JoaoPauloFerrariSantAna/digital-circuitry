@@ -53,9 +53,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(370,210)" to="(370,230)"/>
     <wire from="(370,230)" to="(460,230)"/>
     <wire from="(370,270)" to="(460,270)"/>
-    <wire from="(370,210)" to="(370,230)"/>
     <wire from="(660,250)" to="(660,300)"/>
     <wire from="(370,270)" to="(370,300)"/>
     <wire from="(520,250)" to="(660,250)"/>
@@ -64,6 +64,21 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(210,280)" to="(310,280)"/>
     <wire from="(210,320)" to="(310,320)"/>
     <wire from="(650,300)" to="(660,300)"/>
+    <comp lib="6" loc="(346,117)" name="Text">
+      <a name="text" val="lógica obtida por ajuda do professor Cesar Giacomini Penteado dia 11/11/24 as aprox. 21:28"/>
+    </comp>
+    <comp lib="1" loc="(520,250)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(370,300)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(210,320)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(370,210)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
     <comp lib="0" loc="(650,300)" name="Pin">
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
@@ -74,23 +89,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(210,230)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="1" loc="(520,250)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
     <comp lib="0" loc="(210,280)" name="Pin">
       <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(210,320)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(370,210)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(370,300)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(346,117)" name="Text">
-      <a name="text" val="lógica obtida por ajuda do professor Cesar Giacomini Penteado"/>
     </comp>
   </circuit>
 </project>

@@ -20,6 +20,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="#Memory" name="4">
     <tool name="ROM">
       <a name="contents">addr/data: 8 8
+0
 </a>
     </tool>
   </lib>
@@ -106,21 +107,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(350,430)" to="(350,480)"/>
     <wire from="(250,200)" to="(320,200)"/>
     <wire from="(400,80)" to="(400,140)"/>
-    <comp lib="0" loc="(320,80)" name="Pin">
+    <comp lib="1" loc="(350,430)" name="XOR Gate">
       <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B0"/>
-    </comp>
-    <comp lib="0" loc="(250,200)" name="Clock">
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="6" loc="(713,575)" name="Text">
-      <a name="text" val="versão inicial de &quot;parity&quot; realizado pelo professor CESAR GIACOMINI PENTEADO"/>
-    </comp>
-    <comp lib="0" loc="(400,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B2"/>
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(350,480)" name="Pin">
       <a name="facing" val="north"/>
@@ -128,38 +117,50 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="P"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(350,430)" name="XOR Gate">
-      <a name="facing" val="south"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(743,531)" name="Text">
-      <a name="text" val="código realizado por João Paulo Ferrari Sant'Ana dia 11/11/24 as 22:17"/>
-    </comp>
     <comp lib="1" loc="(310,330)" name="XOR Gate">
       <a name="facing" val="south"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(250,170)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SHIFT/LOAD"/>
+    <comp lib="0" loc="(250,200)" name="Clock">
+      <a name="label" val="CLK"/>
     </comp>
-    <comp lib="7" loc="(330,180)" name="main"/>
     <comp lib="0" loc="(360,80)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B1"/>
+    </comp>
+    <comp lib="0" loc="(400,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B2"/>
+    </comp>
+    <comp lib="7" loc="(330,180)" name="main"/>
+    <comp lib="6" loc="(713,575)" name="Text">
+      <a name="text" val="versão inicial de &quot;parity&quot; realizado pelo professor CESAR GIACOMINI PENTEADO"/>
     </comp>
     <comp lib="0" loc="(450,80)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B3"/>
     </comp>
-    <comp lib="6" loc="(552,554)" name="Text">
-      <a name="text" val="código corrigido com a colaboração do professor CESAR GIACOMINI PENTEADO, aquele que cedeu os slides que foram usados como base"/>
+    <comp lib="6" loc="(743,531)" name="Text">
+      <a name="text" val="código realizado por João Paulo Ferrari Sant'Ana dia 11/11/24 as 22:17"/>
     </comp>
     <comp lib="1" loc="(390,330)" name="XOR Gate">
       <a name="facing" val="south"/>
       <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(552,554)" name="Text">
+      <a name="text" val="código corrigido com a colaboração do professor CESAR GIACOMINI PENTEADO, aquele que cedeu os slides que foram usados como base"/>
+    </comp>
+    <comp lib="0" loc="(250,170)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SHIFT/LOAD"/>
+    </comp>
+    <comp lib="0" loc="(320,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B0"/>
     </comp>
   </circuit>
 </project>

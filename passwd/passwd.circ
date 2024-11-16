@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1">
+    <tool name="AND Gate">
+      <a name="size" val="70"/>
+    </tool>
+    <tool name="OR Gate">
+      <a name="facing" val="south"/>
+    </tool>
+    <tool name="XNOR Gate">
+      <a name="inputs" val="2"/>
+    </tool>
+  </lib>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5">
+    <tool name="LED">
+      <a name="facing" val="north"/>
+    </tool>
+  </lib>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <lib desc="file#word.circ" name="7">
+    <tool name="main">
+      <a name="facing" val="west"/>
+    </tool>
+  </lib>
+  <lib desc="file#equals.circ" name="8">
+    <tool name="main">
+      <a name="facing" val="south"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(420,280)" to="(420,350)"/>
+    <wire from="(720,150)" to="(720,160)"/>
+    <wire from="(320,340)" to="(380,340)"/>
+    <wire from="(600,120)" to="(720,120)"/>
+    <wire from="(430,290)" to="(750,290)"/>
+    <wire from="(740,160)" to="(740,300)"/>
+    <wire from="(290,170)" to="(290,310)"/>
+    <wire from="(750,160)" to="(750,290)"/>
+    <wire from="(160,220)" to="(210,220)"/>
+    <wire from="(290,310)" to="(410,310)"/>
+    <wire from="(380,340)" to="(380,350)"/>
+    <wire from="(300,170)" to="(300,320)"/>
+    <wire from="(390,330)" to="(390,350)"/>
+    <wire from="(440,300)" to="(740,300)"/>
+    <wire from="(620,140)" to="(720,140)"/>
+    <wire from="(190,140)" to="(190,160)"/>
+    <wire from="(300,320)" to="(400,320)"/>
+    <wire from="(400,320)" to="(400,350)"/>
+    <wire from="(420,380)" to="(420,410)"/>
+    <wire from="(160,190)" to="(200,190)"/>
+    <wire from="(610,130)" to="(720,130)"/>
+    <wire from="(730,160)" to="(730,310)"/>
+    <wire from="(610,130)" to="(610,150)"/>
+    <wire from="(180,130)" to="(280,130)"/>
+    <wire from="(160,160)" to="(190,160)"/>
+    <wire from="(620,140)" to="(620,180)"/>
+    <wire from="(190,140)" to="(280,140)"/>
+    <wire from="(310,170)" to="(310,330)"/>
+    <wire from="(600,180)" to="(620,180)"/>
+    <wire from="(420,280)" to="(760,280)"/>
+    <wire from="(200,150)" to="(200,190)"/>
+    <wire from="(600,210)" to="(630,210)"/>
+    <wire from="(410,310)" to="(410,350)"/>
+    <wire from="(320,170)" to="(320,340)"/>
+    <wire from="(450,310)" to="(450,350)"/>
+    <wire from="(450,310)" to="(730,310)"/>
+    <wire from="(630,150)" to="(720,150)"/>
+    <wire from="(200,150)" to="(280,150)"/>
+    <wire from="(760,160)" to="(760,280)"/>
+    <wire from="(310,330)" to="(390,330)"/>
+    <wire from="(440,300)" to="(440,350)"/>
+    <wire from="(630,150)" to="(630,210)"/>
+    <wire from="(210,160)" to="(280,160)"/>
+    <wire from="(430,290)" to="(430,350)"/>
+    <wire from="(210,160)" to="(210,220)"/>
+    <wire from="(600,150)" to="(610,150)"/>
+    <comp lib="0" loc="(600,120)" name="Clock">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(600,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="WRITE PASS"/>
+    </comp>
+    <comp lib="6" loc="(281,64)" name="Text">
+      <a name="text" val="porque a gente quer ter uma &quot;senha fixa&quot;"/>
+    </comp>
+    <comp lib="5" loc="(420,410)" name="LED">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(307,113)" name="Text">
+      <a name="text" val="DEFAULT PASS"/>
+    </comp>
+    <comp lib="0" loc="(180,130)" name="Clock"/>
+    <comp lib="6" loc="(744,107)" name="Text">
+      <a name="text" val="USER PASS"/>
+    </comp>
+    <comp lib="7" loc="(720,120)" name="main"/>
+    <comp lib="0" loc="(600,210)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SET PASS"/>
+    </comp>
+    <comp lib="6" loc="(995,566)" name="Text">
+      <a name="text" val="repetir o processo com &quot;DEFAULT PASS&quot;"/>
+    </comp>
+    <comp lib="6" loc="(285,89)" name="Text">
+      <a name="text" val="para comparar com a senha do &quot;usuário&quot;"/>
+    </comp>
+    <comp lib="0" loc="(600,180)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLEAR PASS"/>
+    </comp>
+    <comp lib="6" loc="(121,556)" name="Text">
+      <a name="text" val="código feito por João Paulo Ferrari Sant'Ana"/>
+    </comp>
+    <comp lib="0" loc="(160,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SET PASS"/>
+    </comp>
+    <comp lib="6" loc="(963,586)" name="Text">
+      <a name="text" val="e então pegar a saida dos dois e jogar tudo numa AND"/>
+    </comp>
+    <comp lib="6" loc="(282,37)" name="Text">
+      <a name="text" val="a gente vai precisar configurar um outro"/>
+    </comp>
+    <comp lib="0" loc="(160,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST PASS"/>
+    </comp>
+    <comp lib="0" loc="(160,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CONFIG PASS"/>
+    </comp>
+    <comp lib="7" loc="(280,130)" name="main"/>
+    <comp lib="8" loc="(420,380)" name="main">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="6" loc="(880,547)" name="Text">
+      <a name="text" val="a gente vai querer pegar toda saida do &quot;USER PASS&quot; usar com alguma porta lógica"/>
+    </comp>
+    <comp lib="6" loc="(63,577)" name="Text">
+      <a name="text" val="as 19:39, dia 16/11/24"/>
+    </comp>
+  </circuit>
+</project>

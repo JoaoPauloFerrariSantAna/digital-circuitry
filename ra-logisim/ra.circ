@@ -8,7 +8,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   </lib>
   <lib desc="#Gates" name="1">
     <tool name="AND Gate">
-      <a name="inputs" val="4"/>
+      <a name="inputs" val="2"/>
     </tool>
     <tool name="OR Gate">
       <a name="inputs" val="2"/>
@@ -579,27 +579,81 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(760,1910)" to="(760,1960)"/>
     <wire from="(330,1670)" to="(400,1670)"/>
     <wire from="(350,1370)" to="(420,1370)"/>
-    <comp lib="6" loc="(214,1111)" name="Text">
-      <a name="text" val="não aumente"/>
+    <comp lib="8" loc="(500,2330)" name="main"/>
+    <comp lib="6" loc="(189,641)" name="Text">
+      <a name="text" val="pare de aumentar quando chegar no dois"/>
     </comp>
-    <comp lib="1" loc="(320,1310)" name="NOT Gate">
+    <comp lib="5" loc="(740,1960)" name="7-Segment Display"/>
+    <comp lib="1" loc="(260,1090)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="5" loc="(700,840)" name="7-Segment Display"/>
+    <comp lib="8" loc="(410,1650)" name="main"/>
+    <comp lib="5" loc="(720,1220)" name="7-Segment Display"/>
+    <comp lib="1" loc="(280,690)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="8" loc="(500,2110)" name="main"/>
-    <comp lib="8" loc="(500,2330)" name="main"/>
-    <comp lib="10" loc="(590,1550)" name="DECODIICADOR7SEG"/>
-    <comp lib="1" loc="(320,1350)" name="NOT Gate">
+    <comp lib="1" loc="(340,1110)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(240,1330)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="1" loc="(340,1090)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
     <comp lib="1" loc="(340,2070)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="8" loc="(470,770)" name="main"/>
-    <comp lib="8" loc="(420,1380)" name="main"/>
+    <comp lib="1" loc="(230,1840)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="6" loc="(941,2471)" name="Text">
+      <a name="text" val="ajustes realizados pelo professor Cesar Giacomini Penteado"/>
+    </comp>
+    <comp lib="5" loc="(730,1750)" name="7-Segment Display"/>
+    <comp lib="1" loc="(320,1310)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(400,2060)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="6" loc="(1013,2418)" name="Text">
+      <a name="text" val="terminado dia 9/11/24 as 15:07"/>
+    </comp>
+    <comp lib="10" loc="(580,880)" name="DECODIICADOR7SEG"/>
+    <comp lib="1" loc="(300,1870)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
     <comp lib="8" loc="(420,1140)" name="main"/>
-    <comp lib="1" loc="(260,1900)" name="OR Gate">
+    <comp lib="1" loc="(200,760)" name="OR Gate">
       <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="8" loc="(470,770)" name="main"/>
+    <comp lib="8" loc="(430,1890)" name="main"/>
+    <comp lib="1" loc="(300,1600)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(400,2080)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(320,1350)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="10" loc="(600,1260)" name="DECODIICADOR7SEG"/>
+    <comp lib="1" loc="(340,1070)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(320,1330)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="5" loc="(740,2180)" name="7-Segment Display"/>
+    <comp lib="6" loc="(288,1587)" name="Text">
+      <a name="text" val="pare de aumentar quando chegar no sete"/>
     </comp>
     <comp lib="0" loc="(70,870)" name="Pin">
       <a name="facing" val="south"/>
@@ -607,132 +661,81 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="RST global"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="5" loc="(700,840)" name="7-Segment Display"/>
-    <comp lib="10" loc="(620,2220)" name="DECODIICADOR7SEG"/>
-    <comp lib="1" loc="(340,1070)" name="NOT Gate">
+    <comp lib="10" loc="(610,1790)" name="DECODIICADOR7SEG"/>
+    <comp lib="6" loc="(214,1111)" name="Text">
+      <a name="text" val="não aumente"/>
+    </comp>
+    <comp lib="1" loc="(260,1900)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(400,2310)" name="NOT Gate">
       <a name="facing" val="west"/>
-    </comp>
-    <comp lib="5" loc="(610,480)" name="7-Segment Display"/>
-    <comp lib="1" loc="(400,2080)" name="NOT Gate">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="6" loc="(950,2426)" name="Text">
-      <a name="text" val="código realizado por João Paulo Ferrari Sant' Ana"/>
-    </comp>
-    <comp lib="6" loc="(338,1788)" name="Text">
-      <a name="text" val="pare de aumentar quando chegar no oitio"/>
     </comp>
     <comp lib="1" loc="(240,2340)" name="OR Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(320,1370)" name="NOT Gate">
+    <comp lib="6" loc="(338,1788)" name="Text">
+      <a name="text" val="pare de aumentar quando chegar no oitio"/>
+    </comp>
+    <comp lib="1" loc="(340,1130)" name="NOT Gate">
       <a name="facing" val="west"/>
-    </comp>
-    <comp lib="1" loc="(280,690)" name="NOT Gate">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="10" loc="(620,2000)" name="DECODIICADOR7SEG"/>
-    <comp lib="0" loc="(50,800)" name="Clock">
-      <a name="label" val="clock global"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="1" loc="(230,1840)" name="AND Gate">
-      <a name="facing" val="west"/>
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="1" loc="(320,1330)" name="NOT Gate">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="10" loc="(610,1790)" name="DECODIICADOR7SEG"/>
-    <comp lib="1" loc="(260,1090)" name="AND Gate">
-      <a name="facing" val="west"/>
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="1" loc="(240,2120)" name="OR Gate">
-      <a name="inputs" val="2"/>
     </comp>
     <comp lib="6" loc="(194,1351)" name="Text">
       <a name="text" val="não aumente"/>
     </comp>
-    <comp lib="6" loc="(998,2403)" name="Text">
-      <a name="text" val="terminado dia 9/11/24 as 15:07"/>
-    </comp>
-    <comp lib="10" loc="(440,480)" name="DECODIICADOR7SEG"/>
-    <comp lib="1" loc="(280,660)" name="NOT Gate">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="1" loc="(300,1600)" name="NOT Gate">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="6" loc="(288,1587)" name="Text">
-      <a name="text" val="pare de aumentar quando chegar no sete"/>
-    </comp>
     <comp lib="5" loc="(710,1510)" name="7-Segment Display"/>
-    <comp lib="6" loc="(189,641)" name="Text">
-      <a name="text" val="pare de aumentar quando chegar no dois"/>
-    </comp>
-    <comp lib="5" loc="(740,1960)" name="7-Segment Display"/>
-    <comp lib="6" loc="(226,2051)" name="Text">
-      <a name="text" val="pare de aumentar quando chegar no cinco"/>
-    </comp>
-    <comp lib="1" loc="(280,720)" name="NOT Gate">
+    <comp lib="1" loc="(320,1370)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="1" loc="(200,760)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="8" loc="(410,1650)" name="main"/>
-    <comp lib="8" loc="(430,1890)" name="main"/>
-    <comp lib="1" loc="(340,1130)" name="NOT Gate">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="5" loc="(740,2180)" name="7-Segment Display"/>
-    <comp lib="1" loc="(310,1830)" name="NOT Gate">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="1" loc="(340,1090)" name="NOT Gate">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="1" loc="(300,1870)" name="NOT Gate">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="1" loc="(210,1660)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(338,2248)" name="Text">
-      <a name="text" val="pare de aumentar quando chegar no sete"/>
-    </comp>
-    <comp lib="10" loc="(600,1260)" name="DECODIICADOR7SEG"/>
-    <comp lib="5" loc="(730,1750)" name="7-Segment Display"/>
-    <comp lib="1" loc="(340,1110)" name="NOT Gate">
+    <comp lib="10" loc="(590,1550)" name="DECODIICADOR7SEG"/>
+    <comp lib="1" loc="(280,660)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
     <comp lib="1" loc="(310,1850)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="10" loc="(580,880)" name="DECODIICADOR7SEG"/>
-    <comp lib="1" loc="(400,2060)" name="NOT Gate">
-      <a name="facing" val="west"/>
+    <comp lib="10" loc="(440,480)" name="DECODIICADOR7SEG"/>
+    <comp lib="6" loc="(338,2248)" name="Text">
+      <a name="text" val="pare de aumentar quando chegar no sete"/>
     </comp>
     <comp lib="1" loc="(230,1620)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="5" loc="(720,1220)" name="7-Segment Display"/>
+    <comp lib="5" loc="(610,480)" name="7-Segment Display"/>
+    <comp lib="10" loc="(620,2000)" name="DECODIICADOR7SEG"/>
+    <comp lib="0" loc="(50,800)" name="Clock">
+      <a name="label" val="clock global"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="6" loc="(965,2441)" name="Text">
+      <a name="text" val="código realizado por João Paulo Ferrari Sant' Ana"/>
+    </comp>
+    <comp lib="8" loc="(420,1380)" name="main"/>
+    <comp lib="1" loc="(280,720)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(240,2120)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
     <comp lib="1" loc="(340,2290)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="1" loc="(240,1330)" name="AND Gate">
+    <comp lib="10" loc="(620,2220)" name="DECODIICADOR7SEG"/>
+    <comp lib="1" loc="(210,1660)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="8" loc="(500,2110)" name="main"/>
+    <comp lib="6" loc="(226,2051)" name="Text">
+      <a name="text" val="pare de aumentar quando chegar no cinco"/>
+    </comp>
+    <comp lib="1" loc="(310,1830)" name="NOT Gate">
       <a name="facing" val="west"/>
-      <a name="inputs" val="4"/>
     </comp>
     <comp lib="1" loc="(180,680)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="1" loc="(400,2310)" name="NOT Gate">
-      <a name="facing" val="west"/>
     </comp>
   </circuit>
 </project>

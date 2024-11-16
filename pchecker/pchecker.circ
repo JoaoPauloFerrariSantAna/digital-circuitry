@@ -34,6 +34,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </tool>
   </lib>
   <lib desc="file#parity.circ" name="7"/>
+  <lib desc="file#ncheck.circ" name="8"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -72,95 +73,157 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(260,190)" to="(320,190)"/>
-    <wire from="(450,80)" to="(450,150)"/>
-    <wire from="(350,140)" to="(400,140)"/>
-    <wire from="(360,230)" to="(410,230)"/>
-    <wire from="(390,330)" to="(390,340)"/>
-    <wire from="(310,330)" to="(310,340)"/>
-    <wire from="(260,170)" to="(260,190)"/>
-    <wire from="(330,250)" to="(330,270)"/>
-    <wire from="(360,210)" to="(360,230)"/>
-    <wire from="(290,240)" to="(290,270)"/>
-    <wire from="(360,150)" to="(360,180)"/>
-    <wire from="(330,340)" to="(330,370)"/>
-    <wire from="(370,340)" to="(370,370)"/>
-    <wire from="(330,210)" to="(330,240)"/>
-    <wire from="(370,240)" to="(370,270)"/>
-    <wire from="(350,210)" to="(350,240)"/>
-    <wire from="(290,240)" to="(330,240)"/>
-    <wire from="(360,150)" to="(450,150)"/>
-    <wire from="(310,340)" to="(330,340)"/>
-    <wire from="(340,130)" to="(360,130)"/>
-    <wire from="(370,340)" to="(390,340)"/>
-    <wire from="(350,240)" to="(370,240)"/>
-    <wire from="(350,140)" to="(350,180)"/>
-    <wire from="(340,210)" to="(340,250)"/>
-    <wire from="(410,230)" to="(410,270)"/>
-    <wire from="(320,130)" to="(330,130)"/>
-    <wire from="(330,250)" to="(340,250)"/>
-    <wire from="(250,170)" to="(260,170)"/>
+    <wire from="(560,80)" to="(560,90)"/>
+    <wire from="(530,90)" to="(530,100)"/>
+    <wire from="(570,90)" to="(570,100)"/>
+    <wire from="(540,100)" to="(540,110)"/>
+    <wire from="(600,80)" to="(600,90)"/>
+    <wire from="(420,100)" to="(420,110)"/>
+    <wire from="(440,80)" to="(440,90)"/>
+    <wire from="(440,120)" to="(440,130)"/>
+    <wire from="(400,80)" to="(400,90)"/>
+    <wire from="(410,90)" to="(410,100)"/>
+    <wire from="(410,130)" to="(410,140)"/>
+    <wire from="(430,110)" to="(430,120)"/>
+    <wire from="(420,140)" to="(420,150)"/>
+    <wire from="(400,120)" to="(400,130)"/>
+    <wire from="(450,90)" to="(450,100)"/>
+    <wire from="(450,130)" to="(450,140)"/>
+    <wire from="(480,80)" to="(480,90)"/>
+    <wire from="(520,80)" to="(520,90)"/>
+    <wire from="(490,90)" to="(490,100)"/>
+    <wire from="(460,100)" to="(460,110)"/>
+    <wire from="(500,100)" to="(500,110)"/>
+    <wire from="(470,110)" to="(470,120)"/>
+    <wire from="(510,110)" to="(510,120)"/>
+    <wire from="(480,120)" to="(480,130)"/>
+    <wire from="(360,80)" to="(360,90)"/>
+    <wire from="(340,100)" to="(340,110)"/>
+    <wire from="(370,90)" to="(370,100)"/>
+    <wire from="(380,100)" to="(380,110)"/>
+    <wire from="(390,110)" to="(390,120)"/>
+    <wire from="(330,90)" to="(330,120)"/>
+    <wire from="(330,130)" to="(330,160)"/>
+    <wire from="(360,190)" to="(360,290)"/>
+    <wire from="(400,190)" to="(400,290)"/>
+    <wire from="(300,170)" to="(320,170)"/>
+    <wire from="(360,110)" to="(380,110)"/>
+    <wire from="(370,120)" to="(390,120)"/>
+    <wire from="(380,130)" to="(400,130)"/>
+    <wire from="(390,140)" to="(410,140)"/>
+    <wire from="(400,150)" to="(420,150)"/>
+    <wire from="(360,320)" to="(360,360)"/>
     <wire from="(320,80)" to="(320,130)"/>
-    <wire from="(330,130)" to="(330,180)"/>
-    <wire from="(360,80)" to="(360,130)"/>
-    <wire from="(340,130)" to="(340,180)"/>
-    <wire from="(350,430)" to="(350,480)"/>
-    <wire from="(250,200)" to="(320,200)"/>
-    <wire from="(400,80)" to="(400,140)"/>
-    <comp lib="1" loc="(350,430)" name="XOR Gate">
-      <a name="facing" val="south"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(350,480)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="label" val="P"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="1" loc="(310,330)" name="XOR Gate">
-      <a name="facing" val="south"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(250,200)" name="Clock">
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(360,80)" name="Pin">
+    <wire from="(350,110)" to="(350,160)"/>
+    <wire from="(70,360)" to="(360,360)"/>
+    <wire from="(390,190)" to="(390,290)"/>
+    <wire from="(350,190)" to="(350,290)"/>
+    <wire from="(320,130)" to="(330,130)"/>
+    <wire from="(340,110)" to="(350,110)"/>
+    <wire from="(190,200)" to="(300,200)"/>
+    <wire from="(260,80)" to="(260,100)"/>
+    <wire from="(380,190)" to="(380,290)"/>
+    <wire from="(340,190)" to="(340,290)"/>
+    <wire from="(410,90)" to="(440,90)"/>
+    <wire from="(400,120)" to="(430,120)"/>
+    <wire from="(450,90)" to="(480,90)"/>
+    <wire from="(420,100)" to="(450,100)"/>
+    <wire from="(430,110)" to="(460,110)"/>
+    <wire from="(440,120)" to="(470,120)"/>
+    <wire from="(410,130)" to="(440,130)"/>
+    <wire from="(450,130)" to="(480,130)"/>
+    <wire from="(420,140)" to="(450,140)"/>
+    <wire from="(490,90)" to="(520,90)"/>
+    <wire from="(460,100)" to="(490,100)"/>
+    <wire from="(500,100)" to="(530,100)"/>
+    <wire from="(470,110)" to="(500,110)"/>
+    <wire from="(510,110)" to="(540,110)"/>
+    <wire from="(480,120)" to="(510,120)"/>
+    <wire from="(330,90)" to="(360,90)"/>
+    <wire from="(370,90)" to="(400,90)"/>
+    <wire from="(340,100)" to="(370,100)"/>
+    <wire from="(380,100)" to="(410,100)"/>
+    <wire from="(390,110)" to="(420,110)"/>
+    <wire from="(530,90)" to="(560,90)"/>
+    <wire from="(570,90)" to="(600,90)"/>
+    <wire from="(540,100)" to="(570,100)"/>
+    <wire from="(340,120)" to="(340,160)"/>
+    <wire from="(170,180)" to="(190,180)"/>
+    <wire from="(70,100)" to="(260,100)"/>
+    <wire from="(70,100)" to="(70,360)"/>
+    <wire from="(400,150)" to="(400,160)"/>
+    <wire from="(390,140)" to="(390,160)"/>
+    <wire from="(190,180)" to="(190,200)"/>
+    <wire from="(310,180)" to="(310,210)"/>
+    <wire from="(300,170)" to="(300,200)"/>
+    <wire from="(380,130)" to="(380,160)"/>
+    <wire from="(370,190)" to="(370,290)"/>
+    <wire from="(330,190)" to="(330,290)"/>
+    <wire from="(370,120)" to="(370,160)"/>
+    <wire from="(310,180)" to="(320,180)"/>
+    <wire from="(330,120)" to="(340,120)"/>
+    <wire from="(170,210)" to="(310,210)"/>
+    <wire from="(360,110)" to="(360,160)"/>
+    <comp lib="0" loc="(520,80)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="B1"/>
+      <a name="label" val="B5"/>
     </comp>
     <comp lib="0" loc="(400,80)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B2"/>
     </comp>
-    <comp lib="7" loc="(330,180)" name="main"/>
-    <comp lib="6" loc="(713,575)" name="Text">
-      <a name="text" val="versão inicial de &quot;parity&quot; realizado pelo professor CESAR GIACOMINI PENTEADO"/>
-    </comp>
-    <comp lib="0" loc="(450,80)" name="Pin">
+    <comp lib="8" loc="(330,290)" name="main"/>
+    <comp lib="7" loc="(330,160)" name="main"/>
+    <comp lib="0" loc="(440,80)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B3"/>
     </comp>
-    <comp lib="6" loc="(743,531)" name="Text">
-      <a name="text" val="código realizado por João Paulo Ferrari Sant'Ana dia 11/11/24 as 22:17"/>
+    <comp lib="6" loc="(817,603)" name="Text">
+      <a name="text" val="versão inicial de &quot;parity&quot; realizado pelo professor CESAR GIACOMINI PENTEADO"/>
     </comp>
-    <comp lib="1" loc="(390,330)" name="XOR Gate">
+    <comp lib="0" loc="(600,80)" name="Pin">
       <a name="facing" val="south"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(552,554)" name="Text">
-      <a name="text" val="código corrigido com a colaboração do professor CESAR GIACOMINI PENTEADO, aquele que cedeu os slides que foram usados como base"/>
-    </comp>
-    <comp lib="0" loc="(250,170)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="SHIFT/LOAD"/>
+      <a name="label" val="B7"/>
+    </comp>
+    <comp lib="0" loc="(360,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B1"/>
+    </comp>
+    <comp lib="0" loc="(260,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="P"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(320,80)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B0"/>
+    </comp>
+    <comp lib="0" loc="(170,180)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SHIFT/LOAD"/>
+    </comp>
+    <comp lib="0" loc="(170,210)" name="Clock">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(480,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B4"/>
+    </comp>
+    <comp lib="0" loc="(560,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B6"/>
+    </comp>
+    <comp lib="6" loc="(846,578)" name="Text">
+      <a name="text" val="código realizado por João Paulo Ferrari Sant'Ana dia 11/11/24 as 22:17"/>
     </comp>
   </circuit>
 </project>

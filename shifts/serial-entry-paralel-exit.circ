@@ -54,14 +54,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(460,140)" to="(510,140)"/>
+    <wire from="(50,350)" to="(170,350)"/>
     <wire from="(130,140)" to="(250,140)"/>
+    <wire from="(170,350)" to="(290,350)"/>
     <wire from="(210,220)" to="(260,220)"/>
     <wire from="(330,200)" to="(330,220)"/>
     <wire from="(250,140)" to="(360,140)"/>
     <wire from="(430,200)" to="(430,220)"/>
+    <wire from="(290,350)" to="(400,350)"/>
     <wire from="(210,200)" to="(210,220)"/>
     <wire from="(360,140)" to="(460,140)"/>
+    <wire from="(400,350)" to="(500,350)"/>
     <wire from="(130,220)" to="(130,250)"/>
     <wire from="(330,220)" to="(370,220)"/>
     <wire from="(430,220)" to="(470,220)"/>
@@ -77,26 +80,50 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(330,220)" to="(330,280)"/>
     <wire from="(360,140)" to="(360,200)"/>
     <wire from="(430,220)" to="(430,280)"/>
+    <wire from="(170,230)" to="(170,350)"/>
     <wire from="(460,140)" to="(460,200)"/>
+    <wire from="(290,230)" to="(290,350)"/>
     <wire from="(130,140)" to="(130,200)"/>
+    <wire from="(400,230)" to="(400,350)"/>
     <wire from="(250,140)" to="(250,200)"/>
     <wire from="(210,220)" to="(210,280)"/>
-    <comp lib="4" loc="(300,200)" name="D Flip-Flop"/>
-    <comp lib="0" loc="(430,280)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
+    <wire from="(500,230)" to="(500,350)"/>
+    <comp lib="4" loc="(180,200)" name="D Flip-Flop">
+      <a name="label" val="FF0"/>
     </comp>
     <comp lib="0" loc="(210,280)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
+      <a name="label" val="Q0"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="4" loc="(410,200)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(510,200)" name="D Flip-Flop"/>
+    <comp lib="6" loc="(80,86)" name="Text">
+      <a name="text" val="mas por hora, isso já serve"/>
+    </comp>
+    <comp lib="4" loc="(300,200)" name="D Flip-Flop">
+      <a name="label" val="FF1"/>
+    </comp>
+    <comp lib="4" loc="(410,200)" name="D Flip-Flop">
+      <a name="label" val="FF2"/>
+    </comp>
+    <comp lib="0" loc="(50,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="6" loc="(178,62)" name="Text">
+      <a name="text" val="adento: seria melhor se eu colocasse um RST para cada flip flop"/>
+    </comp>
+    <comp lib="4" loc="(510,200)" name="D Flip-Flop">
+      <a name="label" val="FF3"/>
+    </comp>
+    <comp lib="0" loc="(50,350)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST"/>
+    </comp>
     <comp lib="0" loc="(330,280)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
+      <a name="label" val="Q1"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(130,250)" name="Pin">
@@ -104,10 +131,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="data-in"/>
     </comp>
-    <comp lib="0" loc="(50,140)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="CLK"/>
+    <comp lib="0" loc="(430,280)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q2"/>
+      <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="4" loc="(180,200)" name="D Flip-Flop"/>
   </circuit>
 </project>

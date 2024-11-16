@@ -63,6 +63,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(430,200)" to="(430,220)"/>
     <wire from="(290,350)" to="(400,350)"/>
     <wire from="(210,200)" to="(210,220)"/>
+    <wire from="(530,200)" to="(530,280)"/>
     <wire from="(360,140)" to="(460,140)"/>
     <wire from="(400,350)" to="(500,350)"/>
     <wire from="(130,220)" to="(130,250)"/>
@@ -71,6 +72,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(180,200)" to="(210,200)"/>
     <wire from="(300,200)" to="(330,200)"/>
     <wire from="(410,200)" to="(430,200)"/>
+    <wire from="(510,200)" to="(530,200)"/>
     <wire from="(50,140)" to="(130,140)"/>
     <wire from="(460,200)" to="(470,200)"/>
     <wire from="(360,200)" to="(370,200)"/>
@@ -88,6 +90,34 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(250,140)" to="(250,200)"/>
     <wire from="(210,220)" to="(210,280)"/>
     <wire from="(500,230)" to="(500,350)"/>
+    <comp lib="0" loc="(430,280)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="4" loc="(300,200)" name="D Flip-Flop">
+      <a name="label" val="FF1"/>
+    </comp>
+    <comp lib="4" loc="(410,200)" name="D Flip-Flop">
+      <a name="label" val="FF2"/>
+    </comp>
+    <comp lib="0" loc="(130,250)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="data-in"/>
+    </comp>
+    <comp lib="0" loc="(50,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="6" loc="(178,62)" name="Text">
+      <a name="text" val="adento: seria melhor se eu colocasse um RST para cada flip flop"/>
+    </comp>
+    <comp lib="0" loc="(50,350)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST"/>
+    </comp>
     <comp lib="4" loc="(180,200)" name="D Flip-Flop">
       <a name="label" val="FF0"/>
     </comp>
@@ -97,44 +127,22 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Q0"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="6" loc="(80,86)" name="Text">
-      <a name="text" val="mas por hora, isso já serve"/>
-    </comp>
-    <comp lib="4" loc="(300,200)" name="D Flip-Flop">
-      <a name="label" val="FF1"/>
-    </comp>
-    <comp lib="4" loc="(410,200)" name="D Flip-Flop">
-      <a name="label" val="FF2"/>
-    </comp>
-    <comp lib="0" loc="(50,140)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="6" loc="(178,62)" name="Text">
-      <a name="text" val="adento: seria melhor se eu colocasse um RST para cada flip flop"/>
+    <comp lib="0" loc="(530,280)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q3"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="4" loc="(510,200)" name="D Flip-Flop">
       <a name="label" val="FF3"/>
     </comp>
-    <comp lib="0" loc="(50,350)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="RST"/>
+    <comp lib="6" loc="(80,86)" name="Text">
+      <a name="text" val="mas por hora, isso já serve"/>
     </comp>
     <comp lib="0" loc="(330,280)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="label" val="Q1"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(130,250)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="data-in"/>
-    </comp>
-    <comp lib="0" loc="(430,280)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Q2"/>
       <a name="labelloc" val="east"/>
     </comp>
   </circuit>

@@ -102,13 +102,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(650,200)" to="(730,200)"/>
     <wire from="(450,250)" to="(520,250)"/>
     <wire from="(360,170)" to="(430,170)"/>
-    <comp lib="0" loc="(60,240)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B0"/>
-    </comp>
-    <comp lib="1" loc="(360,100)" name="XNOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
     <comp lib="0" loc="(60,280)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B1"/>
@@ -117,32 +110,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="size" val="70"/>
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="6" loc="(135,623)" name="Text">
-      <a name="text" val="https://www.youtube.com/watch?v=tVgocuuisjA"/>
-    </comp>
-    <comp lib="0" loc="(60,200)" name="Pin">
+    <comp lib="0" loc="(60,240)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="A3"/>
-    </comp>
-    <comp lib="0" loc="(60,120)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A1"/>
+      <a name="label" val="B0"/>
     </comp>
     <comp lib="0" loc="(730,200)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
+      <a name="label" val="igual"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(60,160)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A2"/>
-    </comp>
-    <comp lib="1" loc="(370,320)" name="XNOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(60,360)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B3"/>
     </comp>
     <comp lib="1" loc="(360,250)" name="XNOR Gate">
       <a name="inputs" val="2"/>
@@ -154,9 +130,37 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="A0"/>
     </comp>
+    <comp lib="6" loc="(158,418)" name="Text">
+      <a name="text" val="https://www.youtube.com/watch?v=tVgocuuisjA"/>
+    </comp>
+    <comp lib="1" loc="(360,100)" name="XNOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(60,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A3"/>
+    </comp>
+    <comp lib="0" loc="(60,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A1"/>
+    </comp>
     <comp lib="0" loc="(60,320)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B2"/>
+    </comp>
+    <comp lib="6" loc="(710,266)" name="Text">
+      <a name="text" val="se der &quot;1&quot; aqui, significa que é igual sim"/>
+    </comp>
+    <comp lib="1" loc="(370,320)" name="XNOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(60,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A2"/>
+    </comp>
+    <comp lib="0" loc="(60,360)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B3"/>
     </comp>
   </circuit>
 </project>

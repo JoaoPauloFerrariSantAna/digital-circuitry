@@ -64,7 +64,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </tool>
-    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </tool>
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
   </toolbar>
@@ -102,28 +104,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(370,90)" to="(370,100)"/>
     <wire from="(380,100)" to="(380,110)"/>
     <wire from="(390,110)" to="(390,120)"/>
+    <wire from="(350,190)" to="(350,210)"/>
+    <wire from="(390,190)" to="(390,210)"/>
+    <wire from="(190,200)" to="(300,200)"/>
+    <wire from="(330,190)" to="(330,210)"/>
+    <wire from="(370,190)" to="(370,210)"/>
+    <wire from="(260,80)" to="(260,100)"/>
     <wire from="(330,90)" to="(330,120)"/>
     <wire from="(330,130)" to="(330,160)"/>
-    <wire from="(360,190)" to="(360,290)"/>
-    <wire from="(400,190)" to="(400,290)"/>
-    <wire from="(300,170)" to="(320,170)"/>
-    <wire from="(360,110)" to="(380,110)"/>
-    <wire from="(370,120)" to="(390,120)"/>
-    <wire from="(380,130)" to="(400,130)"/>
-    <wire from="(390,140)" to="(410,140)"/>
-    <wire from="(400,150)" to="(420,150)"/>
-    <wire from="(360,320)" to="(360,360)"/>
-    <wire from="(320,80)" to="(320,130)"/>
-    <wire from="(350,110)" to="(350,160)"/>
-    <wire from="(70,360)" to="(360,360)"/>
-    <wire from="(390,190)" to="(390,290)"/>
-    <wire from="(350,190)" to="(350,290)"/>
-    <wire from="(320,130)" to="(330,130)"/>
-    <wire from="(340,110)" to="(350,110)"/>
-    <wire from="(190,200)" to="(300,200)"/>
-    <wire from="(260,80)" to="(260,100)"/>
-    <wire from="(380,190)" to="(380,290)"/>
-    <wire from="(340,190)" to="(340,290)"/>
+    <wire from="(360,280)" to="(360,310)"/>
+    <wire from="(360,340)" to="(360,370)"/>
     <wire from="(410,90)" to="(440,90)"/>
     <wire from="(400,120)" to="(430,120)"/>
     <wire from="(450,90)" to="(480,90)"/>
@@ -144,71 +134,40 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(340,100)" to="(370,100)"/>
     <wire from="(380,100)" to="(410,100)"/>
     <wire from="(390,110)" to="(420,110)"/>
+    <wire from="(300,170)" to="(320,170)"/>
+    <wire from="(360,110)" to="(380,110)"/>
+    <wire from="(370,120)" to="(390,120)"/>
+    <wire from="(380,130)" to="(400,130)"/>
+    <wire from="(390,140)" to="(410,140)"/>
+    <wire from="(400,150)" to="(420,150)"/>
     <wire from="(530,90)" to="(560,90)"/>
     <wire from="(570,90)" to="(600,90)"/>
     <wire from="(540,100)" to="(570,100)"/>
+    <wire from="(360,240)" to="(360,280)"/>
     <wire from="(340,120)" to="(340,160)"/>
     <wire from="(170,180)" to="(190,180)"/>
+    <wire from="(320,80)" to="(320,130)"/>
+    <wire from="(350,110)" to="(350,160)"/>
     <wire from="(70,100)" to="(260,100)"/>
-    <wire from="(70,100)" to="(70,360)"/>
     <wire from="(400,150)" to="(400,160)"/>
+    <wire from="(380,190)" to="(380,210)"/>
+    <wire from="(340,190)" to="(340,210)"/>
     <wire from="(390,140)" to="(390,160)"/>
+    <wire from="(360,190)" to="(360,210)"/>
+    <wire from="(400,190)" to="(400,210)"/>
     <wire from="(190,180)" to="(190,200)"/>
     <wire from="(310,180)" to="(310,210)"/>
     <wire from="(300,170)" to="(300,200)"/>
     <wire from="(380,130)" to="(380,160)"/>
-    <wire from="(370,190)" to="(370,290)"/>
-    <wire from="(330,190)" to="(330,290)"/>
+    <wire from="(70,280)" to="(360,280)"/>
     <wire from="(370,120)" to="(370,160)"/>
+    <wire from="(320,130)" to="(330,130)"/>
     <wire from="(310,180)" to="(320,180)"/>
+    <wire from="(340,110)" to="(350,110)"/>
     <wire from="(330,120)" to="(340,120)"/>
+    <wire from="(70,100)" to="(70,280)"/>
     <wire from="(170,210)" to="(310,210)"/>
     <wire from="(360,110)" to="(360,160)"/>
-    <comp lib="0" loc="(520,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B5"/>
-    </comp>
-    <comp lib="0" loc="(400,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B2"/>
-    </comp>
-    <comp lib="8" loc="(330,290)" name="main"/>
-    <comp lib="7" loc="(330,160)" name="main"/>
-    <comp lib="0" loc="(440,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B3"/>
-    </comp>
-    <comp lib="6" loc="(817,603)" name="Text">
-      <a name="text" val="versão inicial de &quot;parity&quot; realizado pelo professor CESAR GIACOMINI PENTEADO"/>
-    </comp>
-    <comp lib="0" loc="(600,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B7"/>
-    </comp>
-    <comp lib="0" loc="(360,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B1"/>
-    </comp>
-    <comp lib="0" loc="(260,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="label" val="P"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(320,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B0"/>
-    </comp>
-    <comp lib="0" loc="(170,180)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SHIFT/LOAD"/>
-    </comp>
     <comp lib="0" loc="(170,210)" name="Clock">
       <a name="label" val="CLK"/>
     </comp>
@@ -217,13 +176,70 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="B4"/>
     </comp>
+    <comp lib="5" loc="(360,370)" name="LED">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(360,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B1"/>
+    </comp>
+    <comp lib="0" loc="(170,180)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SHIFT/LOAD"/>
+    </comp>
+    <comp lib="1" loc="(360,340)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="6" loc="(817,603)" name="Text">
+      <a name="text" val="versão inicial de &quot;parity&quot; realizado pelo professor CESAR GIACOMINI PENTEADO"/>
+    </comp>
     <comp lib="0" loc="(560,80)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B6"/>
     </comp>
+    <comp lib="7" loc="(330,160)" name="main"/>
+    <comp lib="0" loc="(400,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B2"/>
+    </comp>
+    <comp lib="0" loc="(440,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B3"/>
+    </comp>
+    <comp lib="6" loc="(481,382)" name="Text">
+      <a name="text" val="se ligar o número é par, senão é impar"/>
+    </comp>
+    <comp lib="0" loc="(600,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B7"/>
+    </comp>
+    <comp lib="0" loc="(260,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="P"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="8" loc="(330,210)" name="main"/>
+    <comp lib="0" loc="(320,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B0"/>
+    </comp>
     <comp lib="6" loc="(846,578)" name="Text">
       <a name="text" val="código realizado por João Paulo Ferrari Sant'Ana dia 11/11/24 as 22:17"/>
+    </comp>
+    <comp lib="0" loc="(520,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B5"/>
+    </comp>
+    <comp lib="6" loc="(544,402)" name="Text">
+      <a name="text" val="a gente nega aqui porque senão vai dizer que &quot;1, 3, 5 ...&quot; é par"/>
     </comp>
   </circuit>
 </project>

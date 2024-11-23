@@ -216,58 +216,61 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(610,330)" to="(750,330)"/>
     <wire from="(600,320)" to="(740,320)"/>
     <wire from="(230,100)" to="(230,160)"/>
+    <comp lib="1" loc="(290,180)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="8" loc="(370,400)" name="main"/>
+    <comp lib="6" loc="(906,606)" name="Text">
+      <a name="text" val="atividade realizada por João Paulo Ferrari Sant'Ana as 10:47 do dia 20/11/2024"/>
+    </comp>
     <comp lib="1" loc="(300,100)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="0" loc="(150,70)" name="Clock">
-      <a name="facing" val="south"/>
-      <a name="label" val="SD1"/>
+    <comp lib="7" loc="(570,390)" name="DECODIICADOR7SEG"/>
+    <comp lib="1" loc="(260,450)" name="OR Gate">
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="6" loc="(391,471)" name="Text">
       <a name="text" val="quando chegar no seis volte ao começo"/>
       <a name="font" val="SansSerif plain 9"/>
     </comp>
-    <comp lib="6" loc="(906,606)" name="Text">
-      <a name="text" val="atividade realizada por João Paulo Ferrari Sant'Ana as 10:47 do dia 20/11/2024"/>
+    <comp lib="6" loc="(416,210)" name="Text">
+      <a name="text" val="quando chegar no seis volte ao começo"/>
+      <a name="font" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="8" loc="(450,160)" name="main"/>
+    <comp lib="0" loc="(210,240)" name="Clock">
+      <a name="lowDuration" val="3"/>
+      <a name="label" val="SD2"/>
+    </comp>
+    <comp lib="6" loc="(875,625)" name="Text">
+      <a name="text" val="atividade corrigida pelo professor Cesar Giacomini Penteado, as 19:20 aprox dia 22/11/24"/>
     </comp>
     <comp lib="1" loc="(250,360)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="7" loc="(640,130)" name="DECODIICADOR7SEG"/>
-    <comp lib="8" loc="(370,400)" name="main"/>
-    <comp lib="6" loc="(416,210)" name="Text">
-      <a name="text" val="quando chegar no seis volte ao começo"/>
-      <a name="font" val="SansSerif plain 9"/>
+    <comp lib="6" loc="(153,30)" name="Text">
+      <a name="text" val="aperte CTRL-K e depois de um tempo, CTRL-K de novo"/>
     </comp>
-    <comp lib="7" loc="(570,390)" name="DECODIICADOR7SEG"/>
-    <comp lib="0" loc="(90,70)" name="Pin">
+    <comp lib="5" loc="(760,130)" name="7-Segment Display"/>
+    <comp lib="0" loc="(150,70)" name="Clock">
       <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="RST"/>
+      <a name="label" val="SD1"/>
     </comp>
     <comp lib="1" loc="(320,340)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="1" loc="(260,450)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="8" loc="(450,160)" name="main"/>
-    <comp lib="1" loc="(290,180)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="5" loc="(690,390)" name="7-Segment Display"/>
-    <comp lib="0" loc="(210,240)" name="Clock">
-      <a name="lowDuration" val="3"/>
-      <a name="label" val="SD2"/>
-    </comp>
-    <comp lib="5" loc="(760,130)" name="7-Segment Display"/>
+    <comp lib="7" loc="(640,130)" name="DECODIICADOR7SEG"/>
     <comp lib="1" loc="(400,80)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="6" loc="(153,30)" name="Text">
-      <a name="text" val="aperte CTRL-K e depois de um tempo, CTRL-K de novo"/>
+    <comp lib="5" loc="(690,390)" name="7-Segment Display"/>
+    <comp lib="0" loc="(90,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST"/>
     </comp>
   </circuit>
 </project>
